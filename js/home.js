@@ -1,26 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
     const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = themeToggle.querySelector("i");
     const menuToggle = document.getElementById("menuToggle");
     const nav = document.getElementById("mainNav");
 
-    // Load saved theme
+    // Load saved theme from localStorage
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
         document.body.classList.add("dark");
-        themeToggle.textContent = "☀️";
+        themeIcon.classList.replace("bx-moon", "bx-sun");
     }
-    // Toggle dark mode and save to local storage
+
+    // Toggle dark mode and update icon/localStorage
     themeToggle.addEventListener("click", () => {
         document.body.classList.toggle("dark");
-        const theme = document.body.classList.contains("dark")
-            ? "dark"
-            : "light";
-        themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
-        localStorage.setItem("theme", theme);
+        const isDark = document.body.classList.contains("dark");
+        themeIcon.classList.replace(
+            isDark ? "bx-moon" : "bx-sun",
+            isDark ? "bx-sun" : "bx-moon"
+        );
+        localStorage.setItem("theme", isDark ? "dark" : "light");
     });
+
     // Toggle mobile navigation
     menuToggle.addEventListener("click", () => {
         nav.classList.toggle("show");
         document.body.classList.toggle("nav-open");
     });
+
+    // Hide nav on load for mobile
+    if (window.innerWidth < 768) {
+        nav.classList.remove("show");
+        document.body.classList.remove("nav-open");
+    }
 });
