@@ -25,7 +25,6 @@
 
 html {
     scroll-behavior: smooth;
-    color-scheme: light dark;
 }
 body {
     background-color: var(--bg-color);
@@ -243,7 +242,6 @@ footer .copyright {
     padding: 0.8rem 1rem;
     border: 1px solid var(--form-border);
     border-radius: var(--radius);
-    background-color: var(--bg-color);
 }
 
 .contact-form input:focus,
@@ -255,7 +253,6 @@ footer .copyright {
 .contact-form button[type="submit"] {
     align-self: flex-start;
     background-color: var(--text-accent);
-    color: white;
     border: none;
     border-radius: var(--radius);
     cursor: pointer;
@@ -358,6 +355,6 @@ footer .copyright {
         gap: 2rem;
     }
     footer .contact-form {
-        width: 30%;
+        width: 50%;
     }
 }
