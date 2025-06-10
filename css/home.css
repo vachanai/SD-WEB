@@ -25,6 +25,7 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: light dark;
 }
 body {
     background-color: var(--bg-color);
@@ -238,6 +239,7 @@ button {
     padding: 0.8rem 1rem;
     border: 1px solid var(--form-border);
     border-radius: var(--radius);
+    background-color: var(--bg-color);
 }
 
 .contact-form input:focus,
@@ -249,6 +251,7 @@ button {
 .contact-form button[type="submit"] {
     align-self: flex-start;
     background-color: var(--text-accent);
+    color: white;
     border: none;
     border-radius: var(--radius);
     cursor: pointer;
@@ -351,6 +354,6 @@ button {
         gap: 2rem;
     }
     footer .contact-form {
-        width: 50%;
+        width: 30%;
     }
 }
