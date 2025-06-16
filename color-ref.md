@@ -27,17 +27,10 @@
 ## Main Color for data table
 
 #2e5284 - dark blue | Table header background color
-#2E5284 - dark blue | Table row background color
 #3C6DBA - darker blue | Table row hover background color
-#3c6dba - darker blue | Table row active background color
 #4881D0 - light blue | Table row selected background color
-#4881d0 - light blue | Table row selected text color
 #ffffff - white | Table row text color
 #f5f5f5 - light gray | Table row border color
-#f5f5f5 - light gray | Table header border color
-#f5f5f5 - light gray | Table footer border color
-#f5f5f5 - light gray | Table cell border color
-#f5f5f5 - light gray | Table cell padding
 
 ## Theme Website Colors
 

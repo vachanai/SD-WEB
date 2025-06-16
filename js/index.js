@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const themeToggle = document.getElementById("themeToggle");
         const themeIcon = themeToggle?.querySelector("i");
         const menuToggle = document.getElementById("menuToggle");
-        const nav = document.getElementById("mainNav");
+        const nav = document.getElementById("nav-menu");
 
         // Set initial theme
         const currentTheme = localStorage.getItem("theme");
